@@ -35,7 +35,7 @@
 }
 
 .contents {
-  padding: 20px;
+  padding-top: 20px;
   color: #0f0f0f;
   background-color: #c5a880;
   position: relative;
@@ -99,9 +99,10 @@
 }
 
 .contents .link:hover {
+  color: white;
   -webkit-transition: 2s;
   transition: 2s;
-  border-radius: 30px;
+  border-radius: 5px;
   background-color: black;
   padding: 5px;
 }
@@ -111,6 +112,36 @@
   opacity: 0;
   -webkit-transform: scaleY(2) scaleX(1.3);
           transform: scaleY(2) scaleX(1.3);
+}
+
+.contents .second-container {
+  background-color: #532e1c;
+  width: 100%;
+  margin-top: 30px;
+  color: #e6e6e6;
+}
+
+.contents .second-container .link {
+  color: #0f0f0f;
+}
+
+.contents .second-container .link:hover {
+  padding: 7px;
+  color: #e6e6e6;
+}
+
+.contents .second-container .card-container {
+  padding: 2.5vw;
+}
+
+.contents .second-container .card-container h2 {
+  font-size: 50px;
+}
+
+.contents .second-container .card-container hr {
+  position: relative;
+  top: 10px;
+  border-color: #e6e6e6;
 }
 
 .horizontal-line {
@@ -125,7 +156,7 @@
     bottom: 10px;
     border-width: 1px;
   }
-  .contents .important {
+  .important {
     font-size: 30px;
   }
   .contents p {
