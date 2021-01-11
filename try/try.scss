@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+$primary-color: #c5a880;
+$seconday-color: #0f0f0f;
+$tri-color:#532e1c;
+$white:#e6e6e6;
 * {
     margin: 0;
     padding: 0;
@@ -42,20 +46,22 @@
         font-family: "Noto Sans JP", sans-serif;
         border-radius: 20px;
         padding: 1vw;
-        color: white;
+        color: $seconday-color;
+
         text-align: center;
         width: 50vw;
         margin-left: auto;
         margin-right: auto;
         position: relative;
         font-size: 60px;
-        margin-bottom: 20px;
         border-radius: 100px;
     }
+
     p {
+        font-size: 30px;
         display: block;
         text-align: center;
-        font-weight: 800;
+        padding-top: 3.5vh;
         font-family: "Noto Sans JP", sans-serif;
     }
     .link {
@@ -76,10 +82,12 @@
             z-index: -1;
             transition: 1s;
             background-color: #0f0f0f;
+            border-radius: 20px;
         }
         &:hover {
             transition: 2s;
-            background-color: black;
+            border-radius: 30px;
+            background-color: rgba($color: #000000, $alpha: 1.0);
             padding: 5px;
             &:after {
                 z-index: 1;
@@ -89,13 +97,26 @@
         }
     }
 }
+
+.horizontal-line{
+    position: relative;
+    bottom: 20px;
+    border: 2px solid $seconday-color;
+}
 @media screen and (max-width: 1153px) {
+    .horizontal-line{
+        position: relative;
+        bottom: 10px;
+        border-width: 1px;
+    }
     .contents {
         .important {
             font-size: 30px;
         }
         p {
+            padding-top: 1vh;
             font-family: "Noto Sans JP", sans-serif;
+            font-size: 3vw;
         }
     }
 }
