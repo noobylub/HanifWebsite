@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Muhammad Akmal Hanif</title>
+    </head>
+    <link rel="stylesheet" href="Hanif.css">
+    <body>
+        <h1 class="name">Muhammad Akmal Hanif</h1>
+        <section class="image-move"></section>
+        <div class="contents">
+            <h2 class="important">About</h2>
+            <p>
+                I am originally from Indonesia, specifically in the city of 
+                <a class="link" href="https://id.wikipedia.org/wiki/Srengat,_Blitar">Srengat.</a>
+                I have acquired some experience in regards to Wix Ecommerce, and building Wix websites. At the same time I will 
+                be able to manage your business and help it fluorish under my watch.
+            </p>
+        </div>
+        <script type="text/javascript">
+            let c = document.querySelector('.image-move')
+            window.addEventListener('scroll', ()=>{
+                let scr = window.scrollY;
+                c.style.clipPath = "circle("+scr+"px at center)"
+            })
+        </script>
+    </body>
+</html>

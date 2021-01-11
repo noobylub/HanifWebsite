@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.name {
+  font-size: 4vw;
+  text-align: center;
+  background-color: #c5a880;
+  padding: 2vw 4vw;
+  border-radius: 10px;
+  -webkit-box-shadow: -5px -9px 5px 0px #532e1c;
+          box-shadow: -5px -9px 5px 0px #532e1c;
+  display: inline;
+  position: relative;
+  top: 100px;
+  left: 10px;
+  z-index: 10;
+}
+
+.image-move {
+  background: url("https://wallpaperaccess.com/full/698308.jpg");
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  margin-top: -50px;
+  position: -webkit-sticky;
+  position: sticky;
+  background-attachment: fixed;
+  -webkit-clip-path: circle(0px at center);
+          clip-path: circle(0px at center);
+}
+
+.contents {
+  padding: 20px;
+  color: #0f0f0f;
+  background-color: #c5a880;
+  position: relative;
+  top: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contents h2 {
+  border-radius: 20px;
+  padding: 1vw;
+  color: white;
+  text-align: center;
+  width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  font-size: 3vw;
+  margin-bottom: 20px;
+  border-radius: 100px;
+}
+
+.important::after {
+  content: "";
+  display: block;
+  background: black;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.important:hover::after {
+  -webkit-transition: ease-in-out .8s;
+  transition: ease-in-out .8s;
+  z-index: 1;
+  opacity: 0;
+  border-radius: 100px;
+  -webkit-transform: scaleY(1.5) scaleX(2);
+          transform: scaleY(1.5) scaleX(2);
+}
+
+.contents p {
+  display: block;
+  text-align: center;
+  font-weight: 800;
+}
+
+.contents .link {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.contents .link::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: inline;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  -webkit-transition: 1s;
+  transition: 1s;
+  background-color: #0f0f0f;
+}
+
+.contents .link:hover {
+  -webkit-transition: 2s;
+  transition: 2s;
+  background-color: black;
+  padding: 5px;
+}
+
+.contents .link:hover:after {
+  z-index: 1;
+  opacity: 0;
+  -webkit-transform: scaleY(2) scaleX(1.3);
+          transform: scaleY(2) scaleX(1.3);
+}
+/*# sourceMappingURL=try.css.map */
