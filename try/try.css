@@ -116,7 +116,7 @@
 
 .contents .about-card {
   background-color: #0f0f0f;
-  margin: 10vh 0px 5vh 3vh;
+  margin: 10vh 0px 5vh 13vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -126,21 +126,38 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 30vw;
-  width: 70vw;
+  border-radius: 30px;
+  width: 20vw;
+  height: 30vh;
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
 .contents .about-card img {
-  padding: 20px 10px 10px -20px;
+  margin: -20px 10px 10px -20px;
+  border-radius: 10px;
 }
 
 .contents .about-card p {
+  visibility: hidden;
   margin-left: 20px;
   color: white;
   padding: 0;
   font-size: 15px;
   text-align: left;
   display: inline;
+}
+
+.contents .about-card:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  width: 70vw;
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
+}
+
+.contents .about-card:hover p {
+  visibility: visible;
 }
 
 .contents .second-container {
