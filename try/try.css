@@ -136,6 +136,7 @@
 .contents .about-card img {
   margin: -20px 10px 10px -20px;
   border-radius: 10px;
+  width: 200px;
 }
 
 .contents .about-card p {
@@ -143,7 +144,7 @@
   margin-left: 20px;
   color: white;
   padding: 0;
-  font-size: 15px;
+  font-size: 10px;
   text-align: left;
 }
 
@@ -165,31 +166,31 @@
   visibility: visible;
 }
 
-.contents .second-container {
+.second-container {
   background-color: #532e1c;
   width: 100%;
   margin-top: 30px;
   color: #e6e6e6;
 }
 
-.contents .second-container .link {
+.second-container .link {
   color: #0f0f0f;
 }
 
-.contents .second-container .link:hover {
+.second-container .link:hover {
   padding: 7px;
   color: #e6e6e6;
 }
 
-.contents .second-container .card-container {
+.second-container .card-container {
   padding: 2.5vw;
 }
 
-.contents .second-container .card-container h2 {
+.second-container .card-container h2 {
   font-size: 50px;
 }
 
-.contents .second-container .card-container hr {
+.second-container .card-container hr {
   position: relative;
   top: 10px;
   border-color: #e6e6e6;
