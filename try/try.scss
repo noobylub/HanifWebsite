@@ -100,50 +100,13 @@ $white: #e6e6e6;
             }
         }
     }
-    .about-card {
-        
-        background-color: $seconday-color;
-        margin: 10vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 30px;
-        width: 20vw;
-        height: 20vh;
-        transition: 2s;
-        img {
-            margin: -20px 10px 10px -20px;
-            border-radius: 10px;
-            width: 200px;
-        }
-        p {
-            opacity: 0;
-
-            margin-left: 20px;
-            color: white;
-            padding: 0;
-            font-size: 10px;
-            text-align: left;
-        }
-        &:hover {
-            z-index: 10;
-            transition: 1s;
-            width: 70vw;
-            transform: translateX(20px);
-            p {
-                transition: 1s;
-                transition-delay: 1s;
-                opacity: 1;
-                visibility: visible;
-            }
-        }
-    }
    
 }
 .second-container {
+    float: left;
     background-color: $tri-color;
-    width: 100%;
-    margin-top: 30px;
+    width: 100vw;
+    margin-top:30vh ;
     color: $white;
     .link {
         color: $seconday-color;
@@ -153,7 +116,7 @@ $white: #e6e6e6;
         }
     }
     .card-container {
-        padding: 2.5vw;
+        
         h2 {
             font-size: 50px;
         }
@@ -164,24 +127,11 @@ $white: #e6e6e6;
         }
     }
 }
-.one{
-    position: relative;
-    bottom: 80vh;
-    left: 20vw;
-}
+
 .horizontal-line {
     position: relative;
     bottom: 20px;
     border: 2px solid $seconday-color;
-}
-@media screen and (max-width: 1150px) {
-    .second-container {
-        .card-container {
-            h2 {
-                font-size: 30px;
-            }
-        }
-    }
 }
 @media screen and (max-width: 1153px) {
     .horizontal-line {
@@ -193,6 +143,8 @@ $white: #e6e6e6;
         font-size: 30px;
     }
     .contents {
+        
+        
         p {
             padding-top: 1vh;
             font-family: "Noto Sans JP", sans-serif;
