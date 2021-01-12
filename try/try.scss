@@ -5,6 +5,7 @@ $tri-color: #532e1c;
 $white: #e6e6e6;
 $green-primary: #70af85;
 $green-secondary: #c6ebc9;
+$lighter-brown: #f0e2d0;
 * {
     margin: 0;
     padding: 0;
@@ -92,9 +93,9 @@ $green-secondary: #c6ebc9;
         }
         &:hover {
             transition: 2s;
-            border-radius: 30px;
-            background-color: rgba($color: #000000, $alpha: 1.0);
-            padding: 5px;
+           
+            
+            
             &:after {
                 z-index: 1;
                 opacity: 0;
@@ -104,13 +105,29 @@ $green-secondary: #c6ebc9;
     }
     
 
-    .second-part{
-        margin-top:20vh ;
+    .card-container{
+       
+        margin-top:10vh ;
         width: 100%;
-        
-        .horizontal-line{
-            border-color: $seconday-color;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .individual-card{
+            margin: 20px;
+            border-radius: 10px;
+            background-color: $tri-color;
+            padding: 30px;
+            color: white;
+            transition: 1s;
+            &:hover{
+                color: $seconday-color;
+                background-color: $lighter-brown;
+                transform: translateY(-15px);
+                box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            }
         }
+      
+        
     }
 
 
@@ -122,7 +139,32 @@ $green-secondary: #c6ebc9;
     bottom: 20px;
     border: 3px solid $seconday-color;
 }
-
+.horizontal{
+    width: 100%;
+    height: 10px;
+    display: flex;
+    margin: 0;
+    flex-grow: 1;
+    .box-sm{
+        flex-grow: 1;
+        transition: all 1s ease-in-out;
+    }
+    .brown{
+        background-color: $green-secondary;
+    }
+    .white{
+        background-color: $white;
+    }
+    .black{
+        background-color: $seconday-color;
+    }
+    .green{
+        background-color: $green-primary;
+    }
+    .box-sm:hover{
+        flex-grow: 12;
+    }
+}
 
 
 
@@ -157,6 +199,12 @@ $green-secondary: #c6ebc9;
             padding-top: 1vh;
             font-family: "Noto Sans JP", sans-serif;
             font-size: 15px;
+        }
+        .card-container{
+            .individual-card{
+                padding: 15px;
+                font-size: 10px;
+            }
         }
     }
 }
