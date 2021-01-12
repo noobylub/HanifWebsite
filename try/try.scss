@@ -39,6 +39,12 @@ $lighter-brown: #f0e2d0;
     background-attachment: fixed;
     clip-path: circle(0px at center);
 }
+@mixin basic-text {
+    font-family: "Noto Sans JP", sans-serif ;
+    padding: 1vw;
+    font-size: 60px;
+    color: $seconday-color;
+}
 .contents {
     
     color: #0f0f0f;
@@ -106,7 +112,7 @@ $lighter-brown: #f0e2d0;
     
 
     .card-container{
-       
+        margin-bottom: 20vh;
         margin-top:10vh ;
         width: 100%;
         display: flex;

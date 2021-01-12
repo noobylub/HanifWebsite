@@ -109,6 +109,7 @@
 }
 
 .contents .card-container {
+  margin-bottom: 20vh;
   margin-top: 10vh;
   width: 100%;
   display: -webkit-box;
