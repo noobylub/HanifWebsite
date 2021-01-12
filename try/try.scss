@@ -1,16 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
 $primary-color: #c5a880;
 $seconday-color: #0f0f0f;
-$tri-color:#532e1c;
-$white:#e6e6e6;
+$tri-color: #532e1c;
+$white: #e6e6e6;
 * {
     margin: 0;
     padding: 0;
 }
-@mixin texts ($font-size) {
+@mixin texts($font-size) {
     font-family: "Noto Sans JP", sans-serif;
     font-size: $font-size;
-
 }
 .name {
     font-size: 4vw;
@@ -89,11 +88,10 @@ $white:#e6e6e6;
             border-radius: 20px;
         }
         &:hover {
-
             color: white;
             transition: 2s;
             border-radius: 5px;
-            background-color: rgba($color: #000000, $alpha: 1.0);
+            background-color: rgba($color: #000000, $alpha: 1);
             padding: 5px;
             &:after {
                 z-index: 1;
@@ -102,86 +100,80 @@ $white:#e6e6e6;
             }
         }
     }
-    .about-card{
+    .about-card {
         background-color: $seconday-color;
         margin: 10vh 0px 5vh 3vh;
         display: flex;
         justify-content: center;
         align-items: center;
-
+        height: 30vw;
         width: 70vw;
-        img{
-             padding: 20px 10px 10px 20px;
+        img {
+           padding: 20px 10px 10px -20px;
         }
-       p{
-           margin-left: 20px;
-           color: white;
-           padding: 0;
-           font-size: 15px;
-          height: 100px;
+        p {
+            margin-left: 20px;
+            color: white;
+            padding: 0;
+            font-size: 15px; 
             text-align: left;
-           display: inline;
-       }
+            display: inline;
+        }
     }
-    .second-container{
+    .second-container {
         background-color: $tri-color;
         width: 100%;
-        margin-top:30px ;
+        margin-top: 30px;
         color: $white;
-        .link{
+        .link {
             color: $seconday-color;
-            &:hover{
+            &:hover {
                 padding: 7px;
                 color: $white;
             }
         }
-        .card-container{
-            
-           padding: 2.5vw;
-           h2{
-            font-size: 50px;
-           }
-           hr{
-               position: relative;
-               top: 10px;
-               border-color: $white;
-           }
+        .card-container {
+            padding: 2.5vw;
+            h2 {
+                font-size: 50px;
+            }
+            hr {
+                position: relative;
+                top: 10px;
+                border-color: $white;
+            }
         }
     }
 }
 
-.horizontal-line{
+.horizontal-line {
     position: relative;
     bottom: 20px;
     border: 2px solid $seconday-color;
 }
-@media screen and (max-width: 1150px){
-    .second-container{
-        .card-container{
-            h2{
+@media screen and (max-width: 1150px) {
+    .second-container {
+        .card-container {
+            h2 {
                 font-size: 30px;
             }
         }
     }
 }
 @media screen and (max-width: 1153px) {
-    .horizontal-line{
+    .horizontal-line {
         position: relative;
         bottom: 10px;
         border-width: 1px;
     }
-    .important{
+    .important {
         font-size: 30px;
     }
     .contents {
-        
         p {
             padding-top: 1vh;
             font-family: "Noto Sans JP", sans-serif;
             font-size: 3vw;
         }
-       
     }
 }
-
-
