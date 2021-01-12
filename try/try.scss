@@ -103,34 +103,35 @@ $white: #e6e6e6;
     .about-card {
         
         background-color: $seconday-color;
-        margin: 10vh 0px 5vh 13vh;
+        margin: 10vh;
         display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 30px;
         width: 20vw;
-        height: 50vh;
+        height: 20vh;
         transition: 2s;
         img {
-           margin: -20px 10px 10px -20px;
-           border-radius: 10px;
+            margin: -20px 10px 10px -20px;
+            border-radius: 10px;
         }
         p {
             opacity: 0;
-            
+
             margin-left: 20px;
             color: white;
             padding: 0;
-            font-size: 15px; 
+            font-size: 15px;
             text-align: left;
-            display: inline;
         }
-        &:hover{
+        &:hover {
+            z-index: 10;
             transition: 1s;
             width: 70vw;
             transform: translateX(20px);
-            p{
+            p {
                 transition: 1s;
+                transition-delay: 1s;
                 opacity: 1;
                 visibility: visible;
             }
@@ -161,7 +162,11 @@ $white: #e6e6e6;
         }
     }
 }
-
+.one{
+    position: relative;
+    bottom: 80vh;
+    left: 20vw;
+}
 .horizontal-line {
     position: relative;
     bottom: 20px;
