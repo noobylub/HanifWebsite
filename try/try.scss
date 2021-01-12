@@ -7,6 +7,11 @@ $white:#e6e6e6;
     margin: 0;
     padding: 0;
 }
+@mixin texts ($font-size) {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: $font-size;
+
+}
 .name {
     font-size: 4vw;
     text-align: center;
@@ -96,6 +101,27 @@ $white:#e6e6e6;
                 transform: scaleY(2) scaleX(1.3);
             }
         }
+    }
+    .about-card{
+        background-color: $seconday-color;
+        margin: 10vh 0px 5vh 3vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 70vw;
+        img{
+             padding: 20px 10px 10px 20px;
+        }
+       p{
+           margin-left: 20px;
+           color: white;
+           padding: 0;
+           font-size: 15px;
+          height: 100px;
+            text-align: left;
+           display: inline;
+       }
     }
     .second-container{
         background-color: $tri-color;
