@@ -3,6 +3,8 @@ $primary-color: #c5a880;
 $seconday-color: #0f0f0f;
 $tri-color: #532e1c;
 $white: #e6e6e6;
+$green-primary: #70af85;
+$green-secondary: #c6ebc9;
 * {
     margin: 0;
     padding: 0;
@@ -37,7 +39,7 @@ $white: #e6e6e6;
     clip-path: circle(0px at center);
 }
 .contents {
-    padding: 20px;
+    
     color: #0f0f0f;
     background-color: #c5a880;
     position: relative;
@@ -100,14 +102,48 @@ $white: #e6e6e6;
             }
         }
     }
+    
+
+    .second-part{
+        margin-top:20vh ;
+        width: 100%;
+        
+        .horizontal-line{
+            border-color: $seconday-color;
+        }
+    }
+
+
+
 }
 
 .horizontal-line {
     position: relative;
     bottom: 20px;
-    border: 2px solid $seconday-color;
+    border: 3px solid $seconday-color;
 }
-@media screen and (max-width: 1153px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
     .horizontal-line {
         position: relative;
         bottom: 10px;
