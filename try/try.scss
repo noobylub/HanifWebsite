@@ -129,6 +129,15 @@ $white:#e6e6e6;
     bottom: 20px;
     border: 2px solid $seconday-color;
 }
+@media screen and (max-width: 1150px){
+    .second-container{
+        .card-container{
+            h2{
+                font-size: 30px;
+            }
+        }
+    }
+}
 @media screen and (max-width: 1153px) {
     .horizontal-line{
         position: relative;
@@ -139,7 +148,6 @@ $white:#e6e6e6;
         font-size: 30px;
     }
     .contents {
-        
         
         p {
             padding-top: 1vh;

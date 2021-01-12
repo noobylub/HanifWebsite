@@ -150,6 +150,12 @@
   border: 2px solid #0f0f0f;
 }
 
+@media screen and (max-width: 1150px) {
+  .second-container .card-container h2 {
+    font-size: 30px;
+  }
+}
+
 @media screen and (max-width: 1153px) {
   .horizontal-line {
     position: relative;
