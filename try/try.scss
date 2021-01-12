@@ -109,14 +109,15 @@ $white: #e6e6e6;
         align-items: center;
         border-radius: 30px;
         width: 20vw;
-        height: 30vh;
-       transition: 2s;
+        height: 50vh;
+        transition: 2s;
         img {
            margin: -20px 10px 10px -20px;
            border-radius: 10px;
         }
         p {
-            visibility: hidden;
+            opacity: 0;
+            
             margin-left: 20px;
             color: white;
             padding: 0;
@@ -129,8 +130,8 @@ $white: #e6e6e6;
             width: 70vw;
             transform: translateX(20px);
             p{
-                
-                
+                transition: 1s;
+                opacity: 1;
                 visibility: visible;
             }
         }

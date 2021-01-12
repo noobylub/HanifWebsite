@@ -128,7 +128,7 @@
           align-items: center;
   border-radius: 30px;
   width: 20vw;
-  height: 30vh;
+  height: 50vh;
   -webkit-transition: 2s;
   transition: 2s;
 }
@@ -139,7 +139,7 @@
 }
 
 .contents .about-card p {
-  visibility: hidden;
+  opacity: 0;
   margin-left: 20px;
   color: white;
   padding: 0;
@@ -157,6 +157,9 @@
 }
 
 .contents .about-card:hover p {
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 1;
   visibility: visible;
 }
 
